@@ -36,7 +36,7 @@ void motor_stop(void)
 // Set the duty cycle from 0% to 100%
 void motor_set_duty(unsigned char percent)
 {
-    if (percent == 0)
+    if (percent <=10)
     {
         motor_stop();
     }
